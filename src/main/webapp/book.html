@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Study Square - Course Booking</title>
+	<link rel="stylesheet" href="css/book.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+	
+</head>
+<body>
+<header class="">
+		<div class="main">
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<ul>
+				<li><a href="index.jsp">HOME</a></li>
+				<li><a href="courses.jsp">COURSES</a></li>
+				<li><a href="about.html">ABOUT US</a></li>
+				<li class="active"><a href="#">BOOK</a></li>
+			</ul>
+		</div>
+	
+	<div class="aboutBox" >
+		
+			<h1>Course Booking</h1>
+			<div class="row">
+
+				<!-- About Content -->
+				<div class="col-lg-5">
+					<div class="about_content">
+							
+						<div class="subtitle"><i>Request a discounted course, if not listed on the website</i> </div><br>
+						<div class="about_text">
+							<form action="bookcourse" method="get">
+								<p>Course Name
+								<input type="text" name="cname" placeholder="Enter name of the required course" required="required"></p>
+								<p>Tutor Name
+								<input type="text" name="tname" placeholder="Enter Tutor or University name" required></p>
+								<p>Category &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<select name="category" class="dropdowns">
+									<option disabled selected value> -- Select an option -- </option>
+									<option value="Blockchain">Blockchain</option>
+    								<option value="Cloud Computing">Cloud Computing</option>
+    								<option value="Cyber Security">Cyber Security</option>
+    								<option value="Data Science">Data Science</option>
+    								<option value="DBMS">DBMS</option>
+    								<option value="DS and Algorithms">DS and Algorithms</option>
+    								<option value="Frameworks">Frameworks</option>
+    								<option value="Internet of Things">Internet of Things</option>
+									<option value="Mobile App Development">Mobile App Development</option>
+									<option value="Networking">Networking</option>
+									<option value="Operating System">Operating System</option>
+									<option value="Programming Languages">Programming languages</option>
+									<option value="Software Development">Software Development</option>
+    								<option value="Web Development">Web Development</option>
+								</select>
+								</p><br>
+								<p>Name
+								<input type="text" name="name" placeholder="Enter your name" required="required"></p>
+								<p>Email Id
+								<input type="email" name="email" placeholder="Enter your email" required="required"></p>
+								<p>Phone
+								<input type="number" name="phone" placeholder="Enter your phone no." required="required"></p>
+								
+								<input type="submit" name="" value="Submit">
+			</form>
+						</div>
+					</div>
+				
+				</div>
+				
+
+				<!-- About Image -->
+				<div class="col-lg-7">
+					<div class="about_image"><img class="about_image" src="img/coursesthumbnail.jpg" alt=""></div>
+				</div>
+			
+	</div>
+</header>
+</body>
+</html>
